@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
 }
 
-p{
+p {
     color: rgba(39, 39, 39, 0.6);
     font-family: Lato;
     font-size: 18px;
@@ -16,7 +16,7 @@ p{
     text-align: left;
 }
 
-button{
+button {
     border-radius: 8px;
     background: rgb(229, 84, 115);
     color: #fff;
@@ -27,32 +27,58 @@ button{
     transition: all 1s;
 }
 
-button:hover{
+button:hover {
     background: #9dd809;
 }
 
-header{
-    background-color: rgba(229, 84, 115, 0.1);
-}
-
-.container{
+.container {
     width: 75%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.banner{
+.section-heading {
+    max-width: 500px;
+    text-align: center;
+}
+
+.section-heading {
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-heading h2 {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+/* typography end */
+
+header,
+#hot-deal {
+    background-color: rgba(229, 84, 115, 0.1);
+}
+
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* text-align: right; */
 }
 
-.banner .banner-text *{
+.banner .banner-text * {
     margin-bottom: 32px;
     max-width: 525px;
 }
 
-.banner .banner-text h1{
+.banner .banner-text h1 {
     color: #272727;
     font-family: Lato;
     font-size: 60px;
@@ -61,7 +87,187 @@ header{
     line-height: normal;
 }
 
-.banner .banner-img img{
+.banner .banner-img img {
     width: 100%;
     vertical-align: middle;
+}
+
+#featured {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.section-content .flower .flower-img {
+    background-color: #eb9cad;
+    border-radius: 300px 300px 0px 0px;
+    padding: 30px 25px 0;
+    height: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.section-content .flower .flower-img img {
+    width: 100%;
+}
+
+.section-content .flower .pink {
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.section-content .flower .blue {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.section-content .flower .green {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.section-content .flower p {
+    color: #272727;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration-line: underline;
+}
+
+.hot-deal-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#hot-deal .hot-deal-text {
+    width: 75%;
+    max-width: 550px;
+    text-align: center;
+}
+
+#hot-deal .hot-deal-text * {
+    margin-bottom: 24px;
+}
+
+#hot-deal .hot-deal-text h2 {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+#hot-deal .hot-deal-img {
+    max-width: 318px;
+}
+
+#hot-deal .hot-deal-text h2 .important {
+    color: #E55473;
+    text-align: center;
+}
+
+#newsletter {
+    margin: 128px 0;
+}
+
+.newsletter-main {
+    background-image: url('../images/newsletter-bg.png');
+    padding: 122px 0;
+}
+
+#newsletter form {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#newsletter form input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+#Instagram .container-Instagram-main {
+    padding: 128px 0;
+}
+
+.banner-content {
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#delivery {
+    background: rgba(39, 39, 39, 0.05);
+}
+
+#delivery .banner-container {
+    padding: 128px 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 24px;
+    margin: 128px 0;
+}
+
+#footer-section {
+    background: rgb(17, 16, 16);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer h2 {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0%;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#footer-section .footer .footer-content {
+    color: rgb(229, 84, 115);
+}
+
+.footer-end {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#footer-section .footer-letter {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
 }
